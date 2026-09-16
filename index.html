@@ -22,7 +22,13 @@
     <header class="hero">
       <nav class="nav" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">NN<span>.</span></a>
-        <a class="nav-link" href="#proyectos">Proyectos <span aria-hidden="true">↘</span></a>
+        <div class="nav-menu">
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#sobre-mi">Perfil</a>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          <a class="nav-link" href="#stack">Stack</a>
+          <a class="nav-link nav-contact" href="#contacto">Contacto <span aria-hidden="true">↘</span></a>
+        </div>
       </nav>
 
       <div class="hero-content" id="inicio">
@@ -46,10 +52,10 @@
     </header>
 
     <main id="contenido">
-      <section class="section about-section" aria-labelledby="sobre-mi">
+      <section class="section about-section" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
         <p class="section-index">01 / PERFIL</p>
         <div>
-          <h2 id="sobre-mi">Tecnología con<br /><em>propósito.</em></h2>
+          <h2 id="titulo-sobre-mi">Tecnología con<br /><em>propósito.</em></h2>
           <p class="about-text">
             Técnica informática en constante aprendizaje, con formación en <strong>DAM</strong> (Desarrollo de Aplicaciones Multiplataforma) y <strong>SMR</strong> (Sistemas Microinformáticos y Redes). Me gusta resolver problemas mediante código, aprender tecnologías nuevas y colaborar en equipos que cuidan los detalles.
           </p>
@@ -89,7 +95,7 @@
         </div>
       </section>
 
-      <section class="section skills-section" aria-labelledby="titulo-stack">
+      <section class="section skills-section" id="stack" aria-labelledby="titulo-stack">
         <div class="section-heading"><div><p class="section-index">03 / HERRAMIENTAS</p><h2 id="titulo-stack">Mi <em>stack.</em></h2></div></div>
         <div class="skills-list">
           <div class="skills-row"><h3>Desarrollo</h3><p>Kotlin · Jetpack Compose · JavaScript · React · PHP · HTML5 / CSS3 · Unity</p></div>
@@ -99,7 +105,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
       <p>¿Tienes una idea o un proyecto?</p>
       <a href="mailto:06nnarvaez@gmail.com">06nnarvaez@gmail.com <span>↗</span></a>
       <div class="footer-meta"><span>© 2026 Nerea Narváez López</span><span>Barcelona, España</span></div>
