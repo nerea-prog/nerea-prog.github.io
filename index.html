@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Nerea Narváez López, Técnica Informática y Desarrolladora Multiplataforma."
+    />
+    <title>Nerea Narváez López · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="hero">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">NN<span>.</span></a>
+        <a class="nav-link" href="#proyectos">Proyectos <span aria-hidden="true">↘</span></a>
+      </nav>
+
+      <div class="hero-content" id="inicio">
+        <p class="eyebrow"><span></span> Disponible para nuevos retos</p>
+        <h1>Hola, soy <em>Nerea.</em></h1>
+        <p class="hero-role">Técnica Informática &amp; Desarrolladora Multiplataforma</p>
+        <p class="tagline">
+          Convierto ideas en productos digitales útiles: desde aplicaciones móviles y APIs hasta sistemas y automatizaciones.
+        </p>
+        <div class="hero-buttons">
+          <a href="mailto:06nnarvaez06@gmail.com" class="btn btn-primary">Hablemos <span aria-hidden="true">→</span></a>
+          <a href="https://github.com/nerea-prog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="portrait">
+          <img src="image.png" alt="Retrato de Nerea Narváez López" />
+        </figure>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true"><span></span> Explora mi trabajo</div>
+    </header>
+
+    <main id="contenido">
+      <section class="section about-section" aria-labelledby="sobre-mi">
+        <p class="section-index">01 / PERFIL</p>
+        <div>
+          <h2 id="sobre-mi">Tecnología con<br /><em>propósito.</em></h2>
+          <p class="about-text">
+            Técnica informática en constante aprendizaje, con formación en <strong>DAM</strong> (Desarrollo de Aplicaciones Multiplataforma) y <strong>SMR</strong> (Sistemas Microinformáticos y Redes). Me gusta resolver problemas mediante código, aprender tecnologías nuevas y colaborar en equipos que cuidan los detalles.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="proyectos" aria-labelledby="titulo-proyectos">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 / SELECCIÓN</p>
+            <h2 id="titulo-proyectos">Proyectos<br /><em>destacados.</em></h2>
+          </div>
+          <p class="section-note">Una muestra de las áreas técnicas en las que trabajo.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured">
+            <div class="project-top"><span class="project-number">01</span><span class="card-badge">Proyecto en equipo</span></div>
+            <div>
+              <h3>Reloj para<br />la salud</h3>
+              <p>Proyecto grupal con reloj, aplicación móvil y web para apoyar el seguimiento de la medicación. Mi aportación fue desarrollar la interfaz del reloj con Jetpack Compose; además, cuento con conocimientos de desarrollo móvil Android.</p>
+            </div>
+            <div class="card-bottom"><div class="card-tech"><span>Kotlin</span><span>Jetpack Compose</span><span>Android Studio</span></div><a href="https://github.com/nerea-prog/proyecto-reloj" target="_blank" rel="noopener noreferrer" aria-label="Ver código del proyecto Reloj para la salud en GitHub">Ver proyecto <span>↗</span></a></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">02</span><span class="card-badge">Backend &amp; datos</span></div>
+            <div><h3>TaskBuddy:<br />gestión de tareas</h3><p>Proyecto desarrollado en equipo, con responsabilidades repartidas entre dos integrantes. Aplicación Android conectada mediante Retrofit a una API REST propia con CRUD, carga de CSV, imágenes y registro de actividad.</p></div>
+            <div class="card-bottom"><div class="card-tech"><span>Kotlin</span><span>Retrofit</span><span>Java</span><span>Spring Boot</span><span>JDBC</span><span>MySQL</span></div><div class="project-links"><a href="https://github.com/nerea-prog/aplicacio_tasques" target="_blank" rel="noopener noreferrer">Ver app Android <span>↗</span></a><a href="https://github.com/nerea-prog/API_aplicacio_tasques" target="_blank" rel="noopener noreferrer">Ver API TaskBuddy <span>↗</span></a><a href="https://github.com/nerea-prog/JPA_API" target="_blank" rel="noopener noreferrer">Ver API JPA (independiente) <span>↗</span></a></div></div>
+          </article>
+
+          <article class="project-card project-dark">
+            <div class="project-top"><span class="project-number">03</span><span class="card-badge">IA &amp; digitalización</span></div>
+            <div><h3>Asistente RAG<br />para TechnoGym</h3><p>Proyecto desarrollado en equipo, con responsabilidades repartidas entre dos integrantes. Asistente local que digitaliza la atención al cliente de un gimnasio mediante documentación Markdown y búsqueda semántica.</p></div>
+            <div class="card-bottom"><div class="card-tech"><span>Python</span><span>LangChain</span><span>Ollama</span><span>ChromaDB</span><span>Gradio</span><span>Docker</span></div><a href="https://github.com/nerea-prog/digitalitzacio_RAG" target="_blank" rel="noopener noreferrer" aria-label="Ver código del Asistente RAG para TechnoGym en GitHub">Ver proyecto <span>↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" aria-labelledby="titulo-stack">
+        <div class="section-heading"><div><p class="section-index">03 / HERRAMIENTAS</p><h2 id="titulo-stack">Mi <em>stack.</em></h2></div></div>
+        <div class="skills-list">
+          <div class="skills-row"><h3>Desarrollo</h3><p>Kotlin · Jetpack Compose · JavaScript · React · PHP · HTML5 / CSS3 · Unity</p></div>
+          <div class="skills-row"><h3>Backend y datos</h3><p>Java · Spring Boot · Python · MySQL · MongoDB · XML / JSON · JPA / JDBC</p></div>
+          <div class="skills-row"><h3>Sistemas</h3><p>Git / GitHub · Arduino · n8n · Redes · Sockets · SEO · Google Ads</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>¿Tienes una idea o un proyecto?</p>
+      <a href="mailto:06nnarvaez06@gmail.com">06nnarvaez06@gmail.com <span>↗</span></a>
+      <div class="footer-meta"><span>© 2026 Nerea Narváez López</span><span>Barcelona, España</span></div>
+    </footer>
+  </body>
+</html>
